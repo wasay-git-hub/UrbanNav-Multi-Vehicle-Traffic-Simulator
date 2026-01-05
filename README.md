@@ -171,38 +171,38 @@ The system is designed for:
 ```
 DSA-Project/
 ├── Backend/
-│   ├── api.py                      # FastAPI REST endpoints (395 lines)
-|   |── data_extractor.ipynb        # Statistical Data Extraction from the dataset
-|   |── traffic_dataset.csv         # Kaggle's 2025 dataset for Lahore's traffic
-│   ├── multi_vehicle_simulator.py  # Main simulation engine (616 lines)
-│   ├── vehicle.py                  # Vehicle entity & manager (400 lines)
-│   ├── pathfinder.py               # A* algorithm (60 lines)
-│   ├── traffic_analyzer.py         # Congestion analysis (320 lines)
-│   ├── traffic_updater.py          # Legacy traffic updates (20 lines)
-│   ├── simulator.py                # Single-vehicle simulator (60 lines)
-│   ├── json_to_graph.py            # Graph loading (40 lines)
-│   ├── config.py                   # Configuration constants (10 lines)
-│   ├── main.py                     # CLI entry point (40 lines)
-│   ├── map.json                    # Simple map data
-│   ├── city_map.json               # City map data
-│   └── nust_campus.json            # Campus map data
+│   ├── api.py                           # FastAPI REST endpoints
+|   |── data_extractor.ipynb             # Statistical data extraction from the dataset
+|   |── traffic_congestion_dataset.csv   # Kaggle's 2025 dataset for Lahore's traffic
+│   ├── multi_vehicle_simulator.py       # Main simulation engine
+│   ├── vehicle.py                       # Vehicle entity & manager
+│   ├── pathfinder.py                    # Dynamic A* algorithm
+│   ├── traffic_analyzer.py              # Congestion analysis
+│   ├── traffic_updater.py               # Legacy traffic updates
+│   ├── simulator.py                     # Single-vehicle simulator
+│   ├── json_to_graph.py                 # Graph loading
+│   ├── config.py                        # Configuration constants
+│   ├── main.py                          # CLI entry point
+│   ├── map.json                         # Simple map data
+│   ├── city_map.json                    # City map data
+│   └── nust_campus.json                 # Campus map data
 │
 ├── Frontend/
 │   └── traffic-sim-frontend/
 │       ├── app/
-│       │   ├── page.tsx            # Main entry (11 lines)
+│       │   ├── page.tsx            # Main entry
 │       │   ├── layout.tsx          # Root layout
 │       │   └── globals.css         # Global styles
 │       ├── components/
-│       │   ├── MultiVehicleTrafficSimulator.tsx    # Main UI (659 lines)
-│       │   ├── MultiVehicleMapVisualization.tsx    # SVG map (789 lines)
+│       │   ├── MultiVehicleTrafficSimulator.tsx    # Main UI
+│       │   ├── MultiVehicleMapVisualization.tsx    # SVG map
 │       │   ├── TrafficStatsDashboard.tsx           # Analytics
 │       │   ├── TrafficControlPanel.tsx             # Controls
 │       │   ├── VehicleMarker.tsx                   # Vehicle icons
 │       │   └── VehicleDetailsTooltip.tsx           # Tooltips
 │       ├── lib/
-│       │   ├── api.ts              # API client (253 lines)
-│       │   ├── types.ts            # TypeScript types (234 lines)
+│       │   ├── api.ts              # API client
+│       │   ├── types.ts            # TypeScript types
 │       │   └── graphData.ts        # Static map data
 │       ├── package.json
 │       ├── next.config.ts
